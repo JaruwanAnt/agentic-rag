@@ -67,10 +67,10 @@ Final Answer
 Install the required packages:
 
 ```bash
-pip install -r requirements.txt
+pip install langchain langchain-google-genai python-dotenv
 ```
 
-Create a `.env` file:
+Put API file in agent2.py
 
 ```text
 llm = ChatGoogleGenerativeAI(
