@@ -28,8 +28,7 @@ agentic-rag/
 ├── agent2.py               # Agent 2 (Report Generator)
 ├── test.py                 # Main program
 ├── requirements.txt
-├── README.md
-└── .env                    # Google API Key
+└── README.md
 ```
 
 ---
@@ -74,7 +73,11 @@ pip install -r requirements.txt
 Create a `.env` file:
 
 ```text
-GOOGLE_API_KEY=your_api_key_here
+llm = ChatGoogleGenerativeAI(
+    model="gemini-3.6-flash",
+    google_api_key="..." Put API key
+)
+
 ```
 
 ---
